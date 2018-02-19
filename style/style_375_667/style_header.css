@@ -1,0 +1,118 @@
+@media only screen and (min-width:0px) {
+    
+    .hContainer1 {
+        width:92%;
+        height:80%;
+        
+        min-width:193px;
+        
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    
+    .imgProfil span {
+        visibility:hidden;
+    }
+    
+    .imgProfil {
+        border-radius:4px;
+        
+        width:35vw;
+        height:100%;
+        
+        min-width:130px;
+        min-height:130px;
+        
+        max-width:260px;
+        
+        background-image:url("../../img/profil.jpg");
+        background-repeat:no-repeat;
+        background-position:cover;
+        background-size:cover;
+        
+        transition-property:all;
+    }
+    
+    .descriptionProfil {
+        width:100%;
+        height:100%;
+        
+        min-width:170px;
+        
+        margin-left:15px;
+        
+        background-color:;
+        font-size:16px;
+        
+        font-family:'Roboto', sans-serif;
+        
+        display:flex;
+        flex-direction:column;
+    }
+    
+    .descriptionProfil ul {
+        list-style:none;
+        
+        margin:0px;
+        margin-top:5px;
+        
+        padding:0px;
+    }
+    
+    .descriptionProfil ul li:not(:last-child) {
+        margin-bottom:5px;
+    }
+    
+    .descriptionProfil h1.profilName {
+        margin:0px;
+        font-size:1.5em;
+    }
+    
+    .descriptionProfil p.profilDevType {
+        margin:0px;
+        font-size:1em;
+        font-weight:600;
+        color:orangered;
+    }
+    
+    .lisbon {
+        color:rgb(0,176,80);
+    }
+}
+
+/* Formato mobile para a vertical */
+@media (min-width: 0px) and (orientation: landscape) {
+    
+    .descriptionProfil {
+        font-size:13px;
+    }
+    
+    .imgProfil {
+        width:50%;
+        height:100%;
+        
+        min-width:10px;
+        min-height:10px;
+    }
+    
+}
+
+/* Formato mobile de um iPad */
+@media (min-width: 768px) {
+    .descriptionProfil {
+        font-size:30px;
+    }
+}
+
+/* Formato mobile para a vertical de um iPad */
+@media (min-width: 1024px) and (orientation: landscape) {
+    .imgProfil {
+        width:35vw;
+        height:100%;
+    }
+    
+    .descriptionProfil {
+        font-size:25px !important;
+    }
+}

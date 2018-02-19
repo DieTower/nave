@@ -1,0 +1,68 @@
+@media only screen and (min-width:0px) {
+    
+    nav ul li span {
+        display:none;
+    }
+    
+    nav ul li {
+        border-radius:4px;
+        
+        min-width:100px;
+        min-height:100%;
+        
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+        color:#ffffff;
+        font-size:30px;
+        
+        /* box-shadow:2px 2px 10px #000000; */
+        margin:2px;
+        
+        transition-property:all;
+        transition-duration:0.3s;
+    }
+    
+    nav ul li:hover {
+        cursor:pointer;
+        opacity:0.8;
+    }
+    
+    nav ul li:nth-child(1) {
+        background-color:#FF4500;
+    }
+    
+    nav ul li:nth-child(2) {
+        background-color:rgb(255,210,0);
+    }
+    
+    nav ul li:nth-child(3) {
+        background-color:rgb(0,170,240);
+        /*#00BFFF*/
+    }
+    
+    nav ul li:active {
+        box-shadow:2px 2px 10px #000000;
+        margin-top:0px;
+        margin-left:0px;
+        
+        margin-bottom:4px;
+        margin-right:4px;
+    }
+    
+}
+
+/* Formato mobile de um iPad */
+@media (min-width: 768px) {
+    nav ul li {
+        font-size:50px;
+    }
+}
+
+/* Formato mobile para a vertical de um iPad */
+@media (min-width: 1024px) and (orientation: landscape) {
+    nav ul li {
+        font-size:80px;
+    }
+}
