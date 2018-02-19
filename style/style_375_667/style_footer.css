@@ -13,12 +13,29 @@
         
         background-color:rgb(0,176,80);
         /*#32CD32*/
+        
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+    }
+    
+    .fContainer1 span {
+        padding-left:15px;
+        
+        font-family:"Roboto",sans-serif;
+        font-weight:400;
+        
+        color:#ffffff;
     }
     
 }
 
 /* Formato mobile para a vertical */
 @media (min-width: 0px) and (orientation: landscape) {
+    
+    footer {
+        visibility:hidden;
+    }
     
     .fContainer1 {
         width:92%;
